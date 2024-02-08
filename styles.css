@@ -25,3 +25,9 @@ li {
 section {
     margin-top: 20px;
 }
+
+#welcome {
+
+    font-size: 28px;
+    color: white;
+}
