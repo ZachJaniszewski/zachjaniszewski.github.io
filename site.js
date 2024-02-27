@@ -17,5 +17,22 @@ if (isMorning) {
     divWelcome.textContent = "Good evening! Welcome to Zach's homepage.";
 }
 
+localStorage.setItem("It's a secret to everybody.", "I’m not superstitious, but I am a little stitious." );
+
+
+function secretMessage() {
+    var userInput = prompt("Enter the key to reveal a secret message:")
+    if (userInput === "It's a secret to everybody."){
+        var secret = localStorage.getItem("It's a secret to everybody.");
+        console.log("The secret message is: " + secret); 
+    } else {
+        console.log("Wrong key. Try again."); 
+    }
+
+}
+
+
+
+
 
 
